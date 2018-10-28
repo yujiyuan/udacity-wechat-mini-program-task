@@ -1,0 +1,31 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail-page" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        {{result.title}}
+    </view>
+    <view class="detail-from-date clearfix" hover-class="none" hover-stop-propagation="false">
+        <text class="detail-from" selectable="false" space="false" decode="false">{{result.source|| '未知来源'}}</text>
+        <text class="detail-date" selectable="false" space="false" decode="false">{{result.date}}</text>
+        <text class="detail-ready-num" selectable="false" space="false" decode="false">阅读 {{result.readCount}}</text>
+    </view>
+    <view class="detail-main" hover-class="none" hover-stop-propagation="false">
+        <block wx:for="{{result.content}}">
+	        <template is="{{item.type}}" data="{{...item}}"/>
+        </block>
+    </view>
+</view>
+
+
+
+<!--
+  type: string
+-->
+<template name="strong" >
+    <text class="detail-text strong"> {{text}}</text>
+</template>
+<template name="image">
+    <image class="detail-img" src="{{src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+</template>
+<template name="p" >
+    <text class="detail-text"> {{text}}</text>
+</template>

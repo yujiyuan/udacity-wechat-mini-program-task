@@ -1,0 +1,118 @@
+/**index.wxss**/
+.page {
+  overflow: hidden;
+}
+.nav-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  background: #4976ff;
+}
+.nav-list .nav-item {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  padding: 20rpx 10rpx;
+  font-size: 34rpx;
+  color: #fff;
+  opacity: 0.5;
+}
+.nav-list .active {
+  opacity: 1;
+  position: relative;
+}
+.nav-list .active:after {
+  content: "";
+  width: 35rpx;
+  height: 3rpx;
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  left: 50%;
+  bottom: 10rpx;
+  transform: translateX(-50%);
+
+}
+.news-info {
+  padding-top: 85rpx;
+  display: flex;
+  flex-direction: column;
+}
+.news-list-main,.news-image-swiper  {
+  padding: 20rpx;
+}
+
+.news-image-swiper {
+  height: 300rpx;
+  background: url("http://pic.90sjimg.com/back_pic/00/04/13/75/d7fb0ca473553a2760cabb987f0f483e.jpg") no-repeat center;
+}
+.news-image-swiper-item{
+  border-radius: 15rpx;
+}
+.slide-image {
+  width: 100%;
+}
+.news-image-swiper-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20rpx;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+}
+
+.news-image-swiper-title ,.news-image-swiper-source {
+  color: #fff;
+  font-size: 32rpx;
+}
+.news-image-swiper-title {
+  margin-bottom: 10rpx;
+}
+.news-image-swiper-source {
+  display: flex;
+  justify-content: flex-start;
+}
+.news-image-swiper-source .text {
+  font-size: 24rpx;
+  opacity: 0.8;
+}
+.news-image-swiper-source .text:first-child {
+  margin-right: 20rpx;
+}
+
+.news-list {
+}
+.news-list-item {
+  display: flex;
+  /* flex-flow: row nowrap;
+  place-content: center;*/
+  align-items: center; 
+  padding: 25rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.item-left-info {
+  margin-right: 15rpx;
+  flex: 1;
+}
+.news-title {
+  font-size: 34rpx;
+  color: #444444;
+}
+.news-from-date {
+  display: flex;
+  margin-top: 20rpx;
+}
+.news-from,.news-date {
+  font-size: 24rpx;
+  color: #888888;
+  margin-right: 40rpx;
+}
+.item-news-img {
+  width: 205rpx;
+  height: 155rpx;
+}

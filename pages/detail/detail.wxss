@@ -1,0 +1,40 @@
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  height: 1%; }
+
+.detail-page {
+  border-top: 1rpx solid #4976ff;
+  padding: 20rpx; }
+  .detail-page .title {
+    margin-top: 20rpx;
+    font-size: 36rpx;
+    color: #000;
+    margin-bottom: 12rpx; }
+  .detail-page .detail-from-date {
+    margin-bottom: 20rpx; }
+    .detail-page .detail-from-date .detail-from, .detail-page .detail-from-date .detail-date, .detail-page .detail-from-date .detail-ready-num {
+      float: left;
+      font-size: 20rpx;
+      color: #ccc;
+      margin-right: 40rpx; }
+    .detail-page .detail-from-date .detail-ready-num {
+      float: right;
+      margin-right: 0; }
+  .detail-page .detail-main .detail-text {
+    margin-bottom: 20rpx;
+    font-size: 24rpx;
+    color: #000; }
+    .detail-page .detail-main .detail-text.strong {
+      font-weight: bold;
+      font-size: 26rpx; }
+  .detail-page .detail-main .detail-img {
+    width: 100%;
+    max-width: 100%; }
+
+/*# sourceMappingURL=detail.wxss.map */
